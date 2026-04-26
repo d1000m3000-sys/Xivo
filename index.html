@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Xivo</title>
+
+<link rel="manifest" href="manifest.json">
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<div class="container">
+  <h1>Xivo 🚀</h1>
+  <p>Create product descriptions that sell</p>
+
+  <input id="product" placeholder="Product name">
+  <textarea id="details" placeholder="Short description"></textarea>
+
+  <select id="type">
+    <option value="description">Description</option>
+    <option value="ad">Ad Copy</option>
+    <option value="hashtags">Hashtags</option>
+  </select>
+
+  <button onclick="generate()">Generate</button>
+
+  <div id="result"></div>
+</div>
+
+<script src="app.js"></script>
+
+<script>
+if ('serviceWorker' in navigator) {
+  navigator.serviceWorker.register('service-worker.js');
+}
+</script>
+
+</body>
+</html>
