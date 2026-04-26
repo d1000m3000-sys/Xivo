@@ -1,0 +1,33 @@
+body {
+  background: #0F172A;
+  color: white;
+  font-family: sans-serif;
+  text-align: center;
+}
+
+.container {
+  padding: 20px;
+}
+
+input, textarea, select {
+  width: 90%;
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 8px;
+  border: none;
+}
+
+button {
+  padding: 10px 20px;
+  background: #6366F1;
+  color: white;
+  border: none;
+  border-radius: 8px;
+}
+
+#result {
+  margin-top: 20px;
+  background: #1E293B;
+  padding: 15px;
+  border-radius: 10px;
+}
